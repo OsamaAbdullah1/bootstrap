@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+<script>
+
+function sorting(numbers,newnum,j){
+    for(let i=0;i<numbers.length;i++){
+        console.log(i)
+        newnum[i]=numbers[numbers.length+j];
+        j=j-1;
+    }
+    return newnum;
+}
+const j=-1;
+const numbers = [32,523,2,6,32,21,5,4];
+const newnum=[]
+console.log(sorting(numbers,newnum,j))
+</script>
+
+</body>
+</html>
